@@ -37,15 +37,17 @@ export default function App() {
       <input onChange={inputHandler}></input>
       <h2>{emoji}</h2>
       <h3>emojis we know </h3>
-      {emojisWeKnow.map((emoji) => (
-        <span
-          style={{ fontSize: "1.5rem", padding: ".5rem", cursor: "pointer" }}
-          onClick={() => clickHandler(emoji)}
-          key={emoji}
-        >
-          {emoji}
-        </span>
-      ))}
+      <div className="emoji-animal">
+        {emojisWeKnow.map((emoji) => (
+          <span
+            style={{ fontSize: "1.5rem", padding: ".5rem", cursor: "pointer" }}
+            onClick={() => clickHandler(emoji)}
+            key={emoji}
+          >
+            {emoji}
+          </span>
+        ))}
+      </div>
     </div>
   );
 }
