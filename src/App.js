@@ -40,7 +40,7 @@ export default function App() {
       <div className="emoji-animal">
         {emojisWeKnow.map((emoji) => (
           <span
-            style={{ fontSize: "1.5rem", padding: ".5rem", cursor: "pointer" }}
+            className="single-emoji"
             onClick={() => clickHandler(emoji)}
             key={emoji}
           >
