@@ -23,7 +23,7 @@ export default function App() {
     let currentEmoji = event.target.value;
     let searchedEmoji = flags[currentEmoji];
     if (searchedEmoji === undefined) {
-      searchedEmoji = "sorry, we don't have this in our database";
+      searchedEmoji = "emoji not found";
     }
     setEmoji(searchedEmoji);
   }
