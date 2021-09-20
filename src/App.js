@@ -8,7 +8,10 @@ const flags = {
   "🐆": "leopard",
   "🦄": "unicorn",
   "🐼": "panda",
-  "🐄": "cow"
+  "🐄": "cow",
+  "🐕": "dog",
+  "🦝": "raccoon",
+  "🐪": "camel"
 };
 
 let emojisWeKnow = Object.keys(flags);
