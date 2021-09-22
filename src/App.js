@@ -11,7 +11,12 @@ const flags = {
   "🐄": "cow",
   "🐕": "dog",
   "🦝": "raccoon",
-  "🐪": "camel"
+  "🐪": "camel",
+  "🐔": "chicken",
+  "🐧": "penguin",
+  "🐊": "crocodile",
+  "🐉": "dragon",
+  "🦕": "sauropod"
 };
 
 let emojisWeKnow = Object.keys(flags);
