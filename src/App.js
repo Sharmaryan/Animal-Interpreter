@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState } from "react";
 
-const flags = {
+const animalsEmoji = {
   "🐺": "wolf",
   "🦊": "fox",
   "🐅": "tiger",
@@ -19,21 +19,21 @@ const flags = {
   "🦕": "sauropod"
 };
 
-let emojisWeKnow = Object.keys(flags);
+let emojisWeKnow = Object.keys(animalsEmoji);
 
 export default function App() {
   const [emoji, setEmoji] = useState("");
 
   function inputHandler(event) {
     let currentEmoji = event.target.value;
-    let searchedEmoji = flags[currentEmoji];
+    let searchedEmoji = animalsEmoji[currentEmoji];
     if (searchedEmoji === undefined) {
       searchedEmoji = "emoji not found";
     }
     setEmoji(searchedEmoji);
   }
   function clickHandler(emoji) {
-    let emojiName = flags[emoji];
+    let emojiName = animalsEmoji[emoji];
     setEmoji(emojiName);
   }
   return (
