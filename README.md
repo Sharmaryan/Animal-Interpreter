@@ -1,4 +1,5 @@
 # Animal-Interpreter
+Animal Interpreter App is done with the help of React Js and it will recognise an emoji, based on the emoji you click.
 
 ## Features
 
